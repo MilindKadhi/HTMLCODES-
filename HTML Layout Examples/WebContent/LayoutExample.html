@@ -1,0 +1,155 @@
+<!-- Ususally when we see websites, the contents is usually displayed in form of ultiple colums 
+like newspapers, magzines ... 
+Layouts is used in this case wheere we can make out webpage more attrarctive.. 
+We will be using various funcitons as well as evenets in the Code .. 
+
+ -->
+
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<style>
+			
+			div.Con 
+			{
+    			width: 100%;
+    			border: 2px solid gray;
+			}
+
+
+			header, footer 
+			{
+    			padding: 1em;
+    			color: white;
+    			background-color: black;
+    			clear: left;
+    			text-align: center;
+			}	
+
+
+			nav 
+			{
+    			float: left;
+    			max-width: 160px;
+    			margin: 0;
+    			padding: 1em;
+			}
+
+
+			nav ul 
+			{
+    			list-style-type: none;
+    			padding: 0;
+			}
+   
+			nav ul a 
+			{
+    			text-decoration: none;
+			}
+
+			article 
+			{
+				
+    			
+    			border : thick;
+    			padding: 1em;
+    			overflow: hidden;
+    			
+    	
+			}
+			
+			
+			
+			
+		
+	</style>
+
+ </head>
+<script>
+
+function Demo2() 
+{
+	
+	document.getElementById('a1').style.visibility = "hidden";
+	
+		
+}
+
+function Demo() 
+{
+	document.getElementById('a1').style.visibility = "visible";
+	
+	document.getElementById('a1').innerHTML="Examples for Images and Links  can be found here";
+	
+}
+
+
+function Demo3() 
+{
+	
+	document.getElementById('a1').style.visibility = "visible";
+	
+	document.getElementById('a1').innerHTML="Examples for Iframes Can be found Here";
+	
+}
+
+function Demo4()
+
+{
+	document.getElementById('a1').style.visibility = "visible";
+	
+	document.getElementById('a1').innerHTML="Examples for Javascript Can be found Here";
+
+}
+
+</script>
+	<body>
+	
+	
+	
+	
+
+
+		<div class="Con">
+
+	<header>
+   	
+   			<h1>HTML CODES </h1>
+   			
+	</header>
+  
+
+	<nav>
+  		<ul>
+    			
+    			
+    			<li><a onmouseout="Demo2()" onmouseover="Demo()" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools">HTML IMAGE AND LINK EXAMPLE</a></li>
+    			<br>
+    			<li><a  onmouseout="Demo2()"  onmouseover="Demo3()" href="http://www.w3schools.com/html/html_iframe.asp">HTML IFRAMES EXAMPLE</a></li>
+    			<br>
+    			<li><a  onmouseout="Demo2()" onmouseover="Demo4()" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_scripts_intro">HTML JAVASCRIPT EXAMPELS</a></li>
+    			
+    			
+  		</ul>
+	
+	</nav>
+
+
+<article id="a1">
+
+ 
+  
+
+
+</article>
+
+<footer>Milind Kadhi HTML LAYOUT EXAMPLES @Copywrite </footer>
+
+</div>
+
+</body>
+</html>
+
