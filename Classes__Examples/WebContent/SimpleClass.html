@@ -1,0 +1,78 @@
+<!-- HTML class is used when we want to define some attributes to a tag .. and instead of calling
+various styles for various tags, we can directly call the class using the tag <div> 
+WE will see a simple example.
+
+Note that we are using a PAdding tag in the code which takes four attributes ... which are Top,
+Bottom, Right, Left .. and the values assosated with that define the spacing around the content .. 
+ -->
+
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+	  <meta charset="UTF-8">
+
+		<title>
+
+		Class Tag Simple
+
+		</title>
+		
+		<style type="text/css">
+		
+		
+		
+			div.Test1
+			 {
+				 
+				background-color: Black;
+				color: White;
+				margin: 20px 0 20px 0;
+				padding-right: 50px;
+				padding-left: 50px;
+				padding-top: 25px;
+				padding-bottom: 25px
+				
+			 }
+		
+		
+		p
+		{
+			text-align: center;
+			text-shadow: green;
+		
+		}
+		
+		</style>
+	
+	</head>
+	
+		<body>
+			
+			<div class= "Test1">
+			  <h2>London</h2>
+
+				<p>London is the capital of England. It is the most populous city in the United Kingdom, 
+				   with a metropolitan area of over 13 million inhabitants.
+				</p>
+			</div>
+			
+			<br>
+
+			<div class = "Test1">
+			<h3> Mumbai </h3>
+			
+			<p>
+			I Love Mumbai
+			</p>
+			
+			</div>
+			
+			
+			<!-- In the above code the way we have defined one Class .. we can similarlyt define various calsses and 
+			call them using the Div tag .. this helps us to use various styles in any tag we want . 
+			 -->
+
+		</body>
+</html>

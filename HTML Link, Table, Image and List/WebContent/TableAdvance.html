@@ -1,0 +1,156 @@
+<!-- Now we will see how do we add diffrent style in the table for that we have to use some attribute to it .. 
+ Here are declaring a Style tab seperately and we can reuse it on all the tables in the HTML code
+It is know as Internal style tab whihc is declared once and can be used throughout the code .. 
+THis is known as internal style Sheet .. 
+In the Style we are editing the style when ever we use table in the entire HTML code as well as for Paragraph 
+
+ -->	
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Table with Attributes </title>
+		
+		<style type="text/css">  
+				table, th, td
+				{  
+   					border: 1px solid black;  
+   					color: red;
+   					border-color: blue;
+   					background-color: white;
+   					border-bottom-style: outset;
+   					box-sizing: border-box;
+   					padding: 10x;
+   					text-align: center;
+   				
+   					
+				}
+				p 
+				{
+				color: red;
+				text-align: center;
+				text-decoration: underline;
+				
+				} 
+				
+				
+`		</style>  	
+
+	
+	</head>
+		
+		<body>
+			<!--  In this example we will see how we can apply various attributes available in HTML for 
+			Tables. We will consider the same example as in Table1 -->
+
+
+			<p>
+			Below we will see how can we apply various style in the table using internal style sheet
+			</p>
+			
+			<table> 
+			<tr>
+			  <th>First Name</th>
+			  <th>Middle Name</th>
+			  <th>Last Name</th>
+			  <th>Age</th>
+			</tr>
+			  
+		  <tr>
+		      <th>Milind</th>
+		      <th>Jagdish</th>
+		      <th>Kadhi</th>
+		      <th>28</th>
+		 </tr>
+		  
+		  <tr>
+		     <th>Mansi</th>
+		     <th>Milind</th>
+		     <th>Kadhi</th>
+		     <th>27</th>
+		  </tr>
+			
+		</table>
+		<br>
+		
+		
+		<!--  Now we will create a Table where we will be able to see ho can we collapse Colums in HTML . 
+		 -->
+		
+			<p>
+			Below we will see how can we apply colum span in Table 
+			
+			</p>
+			<br>
+			
+			
+		<table style="width:100%">  
+ 			 <tr>  
+    			<th>Name</th>  
+    			<th colspan="3">Mobile No.</th>
+    			<th colspan="2">Language Known</th>
+  			</tr>  
+  			<tr>  
+    			<td>Milind Kadhi</td>  
+    			<td>122455656787</td>  
+    			<td>912313424</td> 
+    			<td>12345678</td> 
+    			<td>English</td>
+    			<td>Hindi</td>
+    			
+  			</tr>
+  			
+  			<tr>
+  			
+  				<td>Mansi Kadhi</td>
+  				<td>1223454233123</td>
+  				<td>1231342342313</td>
+  				<td>123123123123</td>
+  				<td>English</td>
+  				<td>Gujrati</td>
+  				
+  			</tr> 
+  				 
+  			
+			
+		</table>  	
+		
+				<!--  Now we will create a Table where we will be able to see ho can we collapse Rows in HTML . 
+		 -->
+		 
+		  	<p>
+  			 
+			Below we will see how can we apply row span in Table 
+			
+			</p>
+			<br>
+		
+		
+		<table>    
+			<tr><th>Name</th><td>Milind</td><td>Mansi</td></tr>    
+			<tr><th rowspan="2">Mobile No.</th><td>123345</td><td>123423245</td></tr>    
+			<tr><td>345345345345</td><td>12314234242</td></tr>   
+			
+		</table>   
+
+		
+		<br>
+		
+		<p> 
+		We will see how can we apply link to the text in the table and also see how can we insert image 
+		</p>
+		<br>
+		
+		
+		<table>
+		
+		<tr><td>Name</td><td>Contact</td>
+		<tr><td>Milind</td><td><a href="https://www.google.co.in/#q=milind+kadhi">MJK</a></td></tr>
+		<tr><td>MMK</td><td><a href="https://www.google.co.in/#q=steve+jobs">MMK</a></td></tr>
+		
+		</table>
+
+		</body>
+</html>
