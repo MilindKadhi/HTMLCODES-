@@ -34,12 +34,12 @@ public class FormServlet extends HttpServlet {
 		
 		  String str1=request.getParameter("t1");
 		  String str2=request.getParameter("t2");
-		 
+		  String str3=request.getParameter("t3");
 		  
 		
 		  
 		
-		  if(str2.length()<6)
+		  if(str2.length()<6 || str3.contains("!") )
 		  {
 			 
 			  

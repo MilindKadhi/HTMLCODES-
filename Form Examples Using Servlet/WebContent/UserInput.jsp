@@ -31,7 +31,8 @@ if(request.getAttribute("Valid")!=null && request.getAttribute("Valid").toString
 {
 	%>
 	<script>
-	alert("Invalid User Name or Password .");
+	alert("Invalid  Password .PLease Enter Valid Password");
+	
 	</script>
 	<% 
 	
@@ -39,14 +40,19 @@ if(request.getAttribute("Valid")!=null && request.getAttribute("Valid").toString
 
 %>
 
+<marquee style="color: purple; ">This is User Validation Form </marquee>
+<br>
+<br>
 
 
 <form method="post" action="FormServlet">
 
 <h3>
 
-   Enter User Name <input  type="text" name="t1"> <br>
+   Enter User Name <input  type="text" name="t1"> <br><br>
    Enter Password   <input type="password" name="t2"> <br><br>
+   Enter Email <input type="text" name= "t3"><br><br>
+    
    
    <input type="submit" style="color: Blue" value="Please Validate">
    
@@ -54,6 +60,7 @@ if(request.getAttribute("Valid")!=null && request.getAttribute("Valid").toString
 
 </h3>
 </form>
+
 </body>
 
 </html>
