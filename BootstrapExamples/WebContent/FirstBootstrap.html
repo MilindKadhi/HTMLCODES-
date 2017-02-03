@@ -1,0 +1,231 @@
+<!-- Here we will see Bootstrap and some basic tabs and tags used in Bootstrap.. 
+First of all we need to understand that we use Bootstrap to make our Webpage device friendly 
+So for that by default we have to use
+<meta name="viewport" content="width=device-width, initial-scale=1">
+This will set the initial zoom level to 1, will adjust the content according to the width of device
+
+Always include the HTML5 doctype at the beginning of the page
+along with the language  attribute and the correct character set
+In this example we will see the following funtionalities ... 
+Grid System; Typography; Tables; Images.
+
+ -->
+
+<!DOCTYPE html>
+<html lan="en">
+ 
+ <head>
+  
+  <meta charset="UTF-8">
+   
+   <title>First Boot Strap Example</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ </head>
+ 
+   <body>
+
+	<div class="container-fluid">
+    
+      <h1>Hello World!</h1>
+    
+  
+     
+     <br>
+     <p> In BootStrap we can have in total<mark style="color: red;">12 colums </mark>  we can divide in a ratio of
+     <mark style="color: red"> 
+     4:4:4 or 3:3:3:3 or 8:4 or in any variation you want</mark> ....  But the total must be 12 </p>
+     
+     <p>3 Colums with Grid Spacing 4.</p>
+ 
+         <div class="row">
+    
+          <div class="col-sm-3" style="background-color:lavender;">Column 1</div>
+   		  <div class="col-sm-3" style="background-color:lavenderblush;">Colum 2</div>
+   		  <div class="col-sm-6" style="background-color:lavender;">Colum 3</div>
+ 
+         </div>
+  
+    </div>
+  
+ 
+ 
+  <div class="container-fluid">
+    
+    <br>
+     <p>4 Colums with Grid Spacing 3.</p>
+ 
+       <div class="row">
+    
+  		  <div class="col-sm-3" style="background-color:lavender;">Column 1</div>
+  		  <div class="col-sm-3" style="background-color:lavenderblush;">Colum 2</div>
+  		  <div class="col-sm-3" style="background-color:lavender;">Colum 3</div>
+  		  <div class="col-sm-3" style="background-color:lavenderblush;">Colum 4</div>
+ 
+ 	   </div>
+  
+  </div>
+
+  <br>
+  
+  
+  <h1>Now we will see diffrent types of Typograpghy used in BootStrap </h1>
+  <br>
+  <p ><h4 style="color: graytext;" align="center"> Here we will see How BotStrp will Style HTML headings </h4></p>
+  
+  <p><h4 style="color: purple;"align="center"> Small element is used to create a lighter, secondary text in any heading</h4></p> 
+ 
+  <br>
+  
+  <div class="container-fluid">
+  
+    <h1>h1 Bootstrap heading (36px)<small> This is Example of Small text in H1 text</small></h1>
+    <h2>h2 Bootstrap heading (30px)<small> This is Example of Small text in H2 text</small></h2>
+    <h3>h3 Bootstrap heading (24px)<small> This is Example of Small text in H3 text</small></h3>
+    <h4>h4 Bootstrap heading (18px)<small> This is Example of Small text in H4 text</small></h4>
+    <h5>h5 Bootstrap heading (14px)<small> This is Example of Small text in H5 text</small></h5>
+    <h6>h6 Bootstrap heading (12px)<small> This is Example of Small text in H6 text</small></h6>
+
+</div>
+
+
+ <br>
+ 
+ <h1>Now we will see how can we use Description List  along wwith Multiple line Code with the use of Pre element </h1>
+ 
+ <br>
+ 
+ <div class="container-fluid">
+  
+  <dl>
+    <dt style="color: red">Coffee</dt>
+    <dd>- black hot drink</dd>
+    <pre>
+		Black Hot Drink is very 
+		Delicious, and this is 
+		written using pre Element
+	</pre>
+    <dt style="color: red;">Milk</dt>
+    <dd>- white cold drink</dd>
+    <pre>
+		White Cold Drink is very Delicious
+		and this is written 
+		using pre element 
+	</pre>
+    
+  </dl>     
+</div>
+  
+  <br>
+  
+  <h1>Now we will see How can we use Colors and Back Ground and 
+  Bootstrap also has some contextual classes that can be used to provide "meaning through colors".</h1>
+  <br>
+  
+  <div class="container-fluid">
+  <h2>Contextual Colors and Background</h2>
+  <p><h4>Use the contextual classes to provide "meaning through colors":</h4></p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  
+  <p><h4>Use the contextual background classes to provide "meaning through colors":</h4></p>
+  <p class="bg-primary">This text is important.</p>
+  <p class="bg-success">This text indicates success.</p>
+  <p class="bg-info">This text represents some information.</p>
+  <p class="bg-warning">This text represents a warning.</p>
+  <p class="bg-danger">This text represents danger.</p>
+</div>
+
+<br>
+<h1> Now we will move to the concept of tables in BootStrap</h1>
+<br>
+
+<div class="container-fluid">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Milind</td>
+        <td>Kadhi</td>
+        <td>miliK@gmail.com</td>
+      </tr>
+      <tr>
+        <td>MMK</td>
+        <td>Kadhi</td>
+        <td>mmk@gmail.com</td>
+      </tr>
+      <tr>
+        <td>JJK</td>
+        <td>Kadhi</td>
+        <td>jjk@gmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+   
+   </body>
+   
+   <br>
+   <h1>Now we will the various effects we can apply on images in Bootstrap. </h1>
+	<br>
+	
+	
+  <div class="container ">
+
+  <h2>Rounded Corners, Circled images and Thumbnails. </h2>
+ 
+  <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>            
+
+  <img src="/Users/milindkadhi/Desktop/Images/image3.png" class="img-rounded" alt="Image" width="304" height="236"> 
+  <img src="/Users/milindkadhi/Desktop/Images/image3.png" class="img-circle" alt="Image" width="304" height="236">
+  <img src="/Users/milindkadhi/Desktop/Images/image3.png" class="img-thumbnail" alt="Image" width="304" height="236"> 
+  
+  
+</div>
+
+<br>
+<h4>Now we will see how to work with Responsive Embeds</h4>
+<br>
+
+<p><h4>The following example creates a responsive video by adding an .embed-responsive-item class to an 
+iframe tag (the video will then scale nicely to the parent element). The containing div defines the aspect ratio of the video:</h4>
+
+<div class = "container-fluid">
+
+<br>
+<pre>What is aspect ratio? 
+
+The aspect ratio of an image describes the proportional relationship between its width and its height. 
+Two common video aspect ratios are 4:3 (the universal video format of the 20th century), and 16:9 (universal 
+for HD television and European digital television).</pre>
+
+
+
+</div>
+
+
+<div class="container-fluid">
+  
+  
+  <h2>Aspect ratio 4:3</h2>
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+  </div>
+</html>
